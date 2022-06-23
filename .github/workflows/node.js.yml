@@ -35,7 +35,7 @@ jobs:
       - run: npm run build --if-present
       - run: npm test
   deploy:
-    # CD part
+    # CD  part
     needs: build_test 
     runs-on: ubuntu-latest
     steps:
