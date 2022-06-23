@@ -10,7 +10,16 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    # Service containers to run with `runner-job`
+    services:
+      # Label used to access the service container
+      redis:
+        # Docker Hub image
+        image: redis
+        #
+        ports:
+          # Opens tcp port 6379 on the host and service container
+          - 6379:6379
     strategy:
       matrix:
         ##node-version:[10.x, 12.x, 14.x, 15.x]
