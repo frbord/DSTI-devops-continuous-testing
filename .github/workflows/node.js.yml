@@ -45,3 +45,4 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "dsti-devop" #Must be unique in Heroku
           heroku_email: "francois.bordelais@edu.dsti.institute"
+      - run: echo 'hello FB xxxxxxx'
